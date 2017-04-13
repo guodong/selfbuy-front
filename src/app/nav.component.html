@@ -1,0 +1,25 @@
+<div class="body">
+  <ul >
+<li routerLink="/demo1">促销食品</li>
+<li routerLink="/demo2">进口食品</li>
+<li routerLink="/demo3">零食</li>
+<li routerLink="/demo4">日用品</li>
+<li routerLink="/demo5">饮料</li>
+<li routerLink="/demo6">酒水</li>
+<li routerLink="/demo7">搜索</li>
+<li routerLink="/demo7">购物车</li>
+    </ul>
+</div>
+
+<br><br><hr/>
+
+<div class="id" *ngFor="let product of products">
+  <div class="img">
+    <img src="assets/{{product.img}}">
+    <span>{{product.name}}</span><br>
+    <a>￥{{product.price}}</a><br>
+    <button>加入购物车</button>
+    <button>购买</button>
+  </div>
+</div>
+
